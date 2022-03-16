@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --main-color: #2e4057;
+  --hover-color: #007ff7;
+  --btn-hover-color: rgb(77, 86, 119, 0.5);
+  --first-bg-color: #8380b6;
+  --main-font: Roboto;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+body {
+  min-width: 600px;
+  background-color: var(--first-bg-color);
+}
+nav {
+  background: white;
+  color: var(--main-color);
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+#nav-center {
+  position: relative;
+  right: 20vw;
+  display: inline-block;
+  font-family: var(--main-font);
+  text-align: center;
+  /* margin-left: 20vw; */
+}
+#nav-link {
+  list-style-type: none;
+  display: inline-block;
+  /* margin-left: 35vw; */
+}
+#nav-link li {
+  display: inline-block;
+}
+#nav-link li a {
+  position: relative;
+  right: -20vw;
+  font-family: var(--main-font);
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  /* margin-left: 5px; */
+}
+#nav-link li a:visited {
+  color: var(--main-color);
+}
+#nav-link li a:hover {
+  color: var(--hover-color);
+}
+
+main {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+#container {
+  margin-top: 35vh;
+  background: var(--main-color);
+  width: 50vw;
+  padding: 30px;
+  border-radius: 10px;
+}
+#container h2 {
+  letter-spacing: 0.3rem;
+  color: white;
+}
+#btn {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-top: 5vh;
+  width: 7rem;
+  height: 5vh;
+  background: none;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  transition: background 1s, box-shadow 1s;
+}
+#btn:hover {
+  background: var(--btn-hover-color);
+  box-shadow: 1px 1px 20px 1px var(--btn-hover-color);
+}
